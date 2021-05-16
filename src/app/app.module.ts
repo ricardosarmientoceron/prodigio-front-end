@@ -14,8 +14,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { LogoutComponent } from './logout/logout.component';
 import { TodoComponent } from './todo/todo.component';
-import { EmployeesComponent } from './employees/employees.component';
-import { ListEmployeesComponent } from './list-employees/list-employees.component';
+
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GridModule } from '@progress/kendo-angular-grid';
@@ -41,8 +40,7 @@ import { LabelModule } from '@progress/kendo-angular-label';
     FooterComponent,
     LogoutComponent,
     TodoComponent,
-    EmployeesComponent,
-    ListEmployeesComponent
+
   ],
   imports: [
     BrowserModule,

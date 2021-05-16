@@ -7,8 +7,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
-import { ListEmployeesComponent } from './list-employees/list-employees.component';
-import { EmployeesComponent } from './employees/employees.component';
+
 
 // welcome 
 const routes: Routes = [
@@ -16,10 +15,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'welcome/:name', component: WelcomeComponent, canActivate:[RouteGuardService]},
   { path: 'todos', component: ListTodosComponent, canActivate:[RouteGuardService] },
-  { path: 'employees', component: ListEmployeesComponent, canActivate:[RouteGuardService] },
+
   { path: 'logout', component: LogoutComponent, canActivate:[RouteGuardService] },
   { path: 'todos/:id', component: TodoComponent, canActivate:[RouteGuardService] },
-  { path: 'employees/:id', component: EmployeesComponent, canActivate:[RouteGuardService] },
+
   { path: '**', component: ErrorComponent }
 ];
 
