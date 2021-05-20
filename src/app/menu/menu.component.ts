@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
   //isUserLoggedIn: boolean = false;
 
-  constructor(private hardcodedAuthenticationService 
+  constructor(public hardcodedAuthenticationService 
     : HardcodedAuthenticationService) { }
 
   ngOnInit() {
